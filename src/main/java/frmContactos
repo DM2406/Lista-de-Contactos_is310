@@ -1,0 +1,63 @@
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+
+public class frmContactos extends JFrame{
+    public frmContactos(String title){
+        super(title);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setContentPane(mainPanel);
+        this.pack();
+
+
+
+        eliminarButton1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
+        guardarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+
+        buscarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+    }
+
+
+
+
+    public static void main(String[] args) {
+        JFrame frame = new frmContactos("Lista de Contactos");
+        frame.setVisible(true);
+
+    }
+
+
+
+
+    private JPanel mainPanel;
+    private JTextField textField1;
+    private JButton eliminarButton1;
+    private JButton guardarButton;
+    private JButton buscarButton;
+    private JTextField txtNombre;
+    private JTextField txtApellido;
+    private JTextField txtTelefono;
+    private JTextField txtCorreo;
+    private JTextField txtDireccion;
+    private JTextField txtTipo;
+    private JTextField txtFavorito;
+
+
+}
